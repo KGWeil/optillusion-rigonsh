@@ -21,18 +21,12 @@ public class Figuren extends PApplet
     }        
 
     public void zeichneBildC() {
-        // Zeichne dir zunächst eine Skizze auf ein Blatt Papier und überlege dir, welche
-        // Werte du den Methoden rect(x,y,b,h) und ellipse(x,y,b,h) übergeben musst, 
-        // dass Bild C gezeichnet wird
 
         // ***** hier kommen deine Anweisungen hin ************
-
-        // ***** Ende der eigenen Anweisungen **********
-    }
-
-    //***** Zusatzaufgabe bzw. Hausaufgabe *************
-    public void zeichneBildA() {
-        // ***** hier kommen deine Anweisungen hin ************
+        circle(250, 150, 100);
+        rect(200, 200, 100, 100);
+        triangle(300, 400, 250, 300, 200, 400);
+        
 
         // ***** Ende der eigenen Anweisungen **********  
     }
