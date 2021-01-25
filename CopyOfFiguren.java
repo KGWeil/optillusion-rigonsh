@@ -2,13 +2,13 @@
 import processing.core.PApplet;
 
 /**
- * Klasse figurC_mitSchleife.
- * Beschreibung: Die FigurC aus der vorherigen Aufgabe soll mit einer Zählschleife implementiert werden.
+ * Klasse CopyOfFiguren.
+ * Beschreibung: Hier sollen mehrere vorgegebene CopyOfFiguren gezeichnet werden.
  *
  * @author Simon Gebert 
  * @version Feb2020
  */
-public class FigurC_mitSchleife extends PApplet
+public class CopyOfFiguren extends PApplet
 {       
     /**
      * settings() Methode 
@@ -17,14 +17,26 @@ public class FigurC_mitSchleife extends PApplet
     @Override
     public void settings()
     {
-        size(500,350); // Festlegen der Fenstergröße
+        size(500, 350); // Festlegen der Fenstergröße
     }        
 
     public void zeichneBildC() {
+
         // ***** hier kommen deine Anweisungen hin ************
-     
-   
-        // ***** Ende der eigenen Anweisungen **********
+        rect(100, 100, 100, 100);
+        ellipse(150, 150, 75, 75);
+        ellipse(150, 150, 50, 50);
+        ellipse(150, 150, 25, 25);
+        
+        ellipse(150, 275, 125, 125);
+        rect(112, 237, 75, 75);
+        rect(125, 250, 50, 50);
+        rect(138, 264, 25, 25);
+        
+        
+        
+
+        // ***** Ende der eigenen Anweisungen **********  
     }
 
     /**
@@ -36,15 +48,15 @@ public class FigurC_mitSchleife extends PApplet
     public void setup()
     {
         zeichneBildC(); // Aufruf deiner Methode
+        // zeichneBildA();
     }
-
 
     /**
      * Mit der main()-Methode wird das Programm gestartet.
      *
      */    
     public static void main(String _args[]){ 
-        PApplet.main(new String[] {FigurC_mitSchleife.class.getName() });
+        PApplet.main(new String[] {CopyOfFiguren.class.getName() });
     }
 
 }
