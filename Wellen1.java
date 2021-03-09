@@ -21,6 +21,14 @@ public class Wellen1 extends PApplet
         size(250,150);
     }        
     public int s=25;
+    /**
+     * Methode zeichneQuadrat
+     *
+     * @param x x-Koordinate des Quadrats
+     * @param y 
+     * @param farbe Ein Parameter
+     * @param links Ein Parameter
+     */
     public void zeichneQuadrat(int x, int y, int farbe, boolean links)
     {
         fill(farbe);
@@ -45,11 +53,11 @@ public class Wellen1 extends PApplet
         }
     }
 
-    public int d;
+    public int d; //
     public void alleQuadrate() {
         noStroke();
         int aktuelleFarbe = 255;
-        int d=25;
+        d=25;
         boolean pos_aktuell = true;
         for (int j=0; j<=3; j++) {
             for (int i=0; i<=7; i++) {
@@ -67,7 +75,7 @@ public class Wellen1 extends PApplet
                 aktuelleFarbe = 255;
             }
 
-            if (pos_aktuell == true) {
+            if (pos_aktuell) {
                 pos_aktuell = false;
             } else {
                 pos_aktuell = true;
